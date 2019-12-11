@@ -9,7 +9,7 @@ pipeline {
           steps {
             sshagent([])  {
            
-sh "scp  target/*txt 3.8.8.65:/home/ec2-user"
+sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/teste/* 3.8.8.65:/home"
               
                 
             }

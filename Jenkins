@@ -8,7 +8,7 @@ pipeline {
         stage('---clean---') {
             steps {
            
-sh "scp target/*txt ec2-user@3.8.8.65:/home/ec2-user""
+sh "scp target/*txt 3.8.8.65:/home/ec2-user""
               
                 
             }

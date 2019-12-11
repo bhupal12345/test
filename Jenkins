@@ -6,12 +6,14 @@ pipeline {
 
     stages {
         stage('---clean---') {
+          steps {
             sshagent(['tc1'])  {
            
 sh "scp target/*txt 3.8.8.65:/home/ec2-user"
               
                 
             }
+        }
         }
         stage('--test--') {
             steps {

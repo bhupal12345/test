@@ -9,7 +9,7 @@ pipeline {
           steps {
             sshagent(['tc1'])  {
            
-sh "scp target/*txt 3.8.8.65:/home/ec2-user"
+sh "scp -o StrictHostKeyChecking=n target/*txt 3.8.8.65:/home/ec2-user"
               
                 
             }

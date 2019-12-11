@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('---clean---') {
           steps {
-            sshagent(['84aae07a-a36b-47ea-9b11-0c5d31c61a08'])  {
+            sshagent([])  {
            
 sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/teste/* 3.8.8.65:/home"
               

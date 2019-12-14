@@ -1,0 +1,29 @@
+currentBuild.displayName = "online-shopping-#"+currentBuild.number
+pipeline {
+    agent any
+
+    
+
+    stages {
+        stage('---clean---') {
+          steps {
+            
+           
+sh "cp  /home/ec2-user/test  /home/ec2-user/tes11"
+              
+                
+  
+        }
+        }
+        stage('--test--') {
+            steps {
+               echo"first step1"
+            }
+        }
+        stage('--package--') {
+            steps {
+              echo"first step2"
+            }
+        }
+    }
+}
